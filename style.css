@@ -1,0 +1,4 @@
+/* Capitalize text */
+ul#ol-list > li {
+    text-transform: capitalize;
+}
