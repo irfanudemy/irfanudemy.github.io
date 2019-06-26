@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Beranda Pegawai</title>
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="my-nav-container my-sticky">
+            <ul class="my-main-menu">
+                <li class="my-dropdown">Beranda
+                    <ul class="my-dropdown-content">
+                        <li><a href="../mahasiswa/mahasiswa.html">Beranda Mahasiswa</a></li>
+                        <li><a href="../dosen/dosen.html">Beranda Dosen</a></li>
+                        <li><a href="./pegawai.html">Beranda Pegawai</a></li>
+                        <li><a href="../index.html">Beranda Berita</a></li>
+                    </ul>
+                </li>
+                <li class="my-dropdown">Tentang KampusKu
+                    <ul class="my-dropdown-content">
+                        <li><a href="../sejarah.html">Sejarah</a></li>
+                        <li><a href="../visi.html">Visi & Misi</a></li>
+                    </ul>
+                </li>
+                <li class="my-dropdown">Akademik
+                    <ul class="my-dropdown-content">
+                        <li class="my-sub-dropdown">Fakultas
+                            <ul class="my-sub-dropdown-content">
+                                <li><a href="">Fakultas Kedokteran</a></li>
+                                <li><a href="">Fakultas Hukum</a></li>
+                                <li><a href="">Fakultas Teknik</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Program Sarjana</a></li>
+                        <li class="my-sub-dropdown">Program Pascasarjana
+                            <ul class="my-sub-dropdown-content">
+                                <li><a href="">Program Magister</a></li>
+                                <li><a href="">Program Spesialis</a></li>
+                                <li><a href="">Program Profesi</a></li>
+                                <li><a href="">Program Doktor</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="my-dropdown">Penerimaan
+                    <ul class="my-dropdown-content">
+                        <li><a href="">Seleksi Masuk KampusKu</a></li>
+                        <li><a href="">SNMPTN</a></li>
+                        <li><a href="">Biaya Pendidikan</a></li>
+                    </ul>
+                </li>
+                <li class="my-push-right"><a href="">Hubungi Kami</a></li>
+            </ul>
+    </nav>
+
+    <div class="my-mhs-container">
+        <h3>Beranda Pegawai</h3>
+    </div>
+
+    <!-- login pegawai -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="./cek_login.php" target="_self" method="POST">
+            <div class="form-group">
+                <label for="nip">NIP Pegawai</label>
+                <input type="text" class="form-control" id="nip" placeholder="Masukkan NIP Pegawai Anda" name="nip">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Masukkan Password Anda" name="pswd">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

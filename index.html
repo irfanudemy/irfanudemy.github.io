@@ -1,69 +1,35 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">My Online Shop</a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
-          </nav>
-    </header>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3 class="text-center">Menu</h3>
-                    <div>
-                        <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between">Gibson <span>Rp 40.000.000</span></li>
-                                <li class="list-group-item d-flex justify-content-between">Fender <span>Rp 25.000.000</span></li>
-                                <li class="list-group-item d-flex justify-content-between">Epiphone <span>Rp 15.000.000</span></li>
-                                <li class="list-group-item d-flex justify-content-between">Ibanez <span>Rp 30.000.000</span></li>
-                            </ul>
-                    </div>
-                    <br>
-                    <div>
-                        <h5>Insert one of our menus</h5>
-                        <!-- <input type="text" id="userinput" placeholder="enter item"> -->
-                        <div class="input-group mb-3">
-                            <input id="userinput" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Insert item">
-                        </div>
-                    </div>
-                    <button id="enter" type="button" class="btn btn-secondary">Add</button>
-                </div>
-                <div class="col-sm-4">
-                  <h3 class="text-center">My Shopping List</h3>
-                    <ul id="ol-list" class="list-group">
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container">
-          <h4>Total</h4>
-            <p id="para-rp">Rp <span class="span-rp">0</span></p>
-        </div>
-    </section>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout Master</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	  <nav class="zone blue sticky">
+	  	<ul class="main-nav">
+	  		<li><a href="#">About</a></li>
+			  <li class="my-dropdown"><a href="#">Products</a>
+				<ul class="my-dropdown-content blue">
+					<li><a href="./produk1/">Demo 1</a></li>
+					<li><a href="./produk2/">Demo 2</a></li>
+					<li><a href="./produk3/">Demo 3</a></li>
+				</ul>
+			</li>
+	  		<li><a href="#">Our Team</a></li>
+	  		<li class="push"><a href="">Contact</a></li>
+	  	</ul>
+	  </nav>
+	  <div class="container zone"><img class="cover" src="./img/undraw.png"></div>
+	  <div class="zone blue grid-wrapper">
+	  	<div class="box zone"><img src="./img/files_2.png"></div>
+	  	<div class="box zone"><img src="./img/server_2_2.png"></div>
+	  	<div class="box zone"><img src="./img/monitor_settings_2.png"></div>
+	  	<div class="box zone"><img src="./img/server_3.png"></div>
+	  	<div class="box zone"><img src="./img/data_storage_2_2.png"></div>
+	  	<div class="box zone"><img src="./img/monitor_coding_2.png"></div>
+	  	<div class="box zone"><img src="./img/desktop_analytics_2.png"></div>
+	  	<div class="box zone"><img src="./img/server_safe_2.png"></div>
+	  </div>
+	  <footer class="zone yellow">Footer</footer>
+</body>
 </html>
